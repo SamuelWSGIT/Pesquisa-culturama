@@ -38,6 +38,7 @@
             <!-- Dados do perfil -->
              <fieldset>
                 <legend>Perfil</legend>
+                <!-- Sexualidade -->
                 <p>Gênero:</p>
                 <input type="radio" name="userGender"
                 value="Feminino">
@@ -51,7 +52,7 @@
                 value="notInformed">
                 <label for="userGender">Prefiro não informar</label>
                 <br>
-
+                <!-- Estado civil -->
                 <label for="userMarital">Estado civil:</label>
                 <select name="userMarital">
                     <option value="notInformed">Selecione...</option>
@@ -60,8 +61,9 @@
                     <option value="casado">União estável</option>
                 </select>
 
+                <!-- Estado onde mora -->
                 <label for="userState">Estado:</label>
-                <select name="userState">
+                <select name="userState" required>
                    <option value="acre">Acre</option>
                    <option value="alagoas">Alagoas</option>
                    <option value="amapa">Amapá</option>
@@ -90,6 +92,8 @@
                    <option value="sergipe">Sergipe</option>
                    <option value="tocantins">Tocantins</option>
                 </select>
+                
+                <!-- Cidade onde mora -->
                 <label for="userCity">Cidades:</label>
                 <input type="text" name="userCity">
              </fieldset>
