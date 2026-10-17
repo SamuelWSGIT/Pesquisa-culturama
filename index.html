@@ -16,23 +16,23 @@
             <!-- Dados pessoais do usuario -->
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="userName">Nome:</label>
-                <input type="text" name="userName" required>
+                <label for="name">Nome:</label>
+                <input type="text" name="userName" id="name" required>
                 <br>
-                <label for="userAge">Idade</label>
-                <input type="number" name="userAge" min="12" max="100" required>
+                <label for="age">Idade</label>
+                <input type="number" name="userAge" min="12" max="100" id="age" required>
                 <br>
-                <label for="userBirthDate">Data de nascimento</label>
-                <input type="date" name="userBirthDate">
+                <label for="birthDate">Data de nascimento</label>
+                <input type="date" name="userBirthDate" id="birthDate">
                 <br>
-                <label for="userEmail">E-mail</label>
-                <input type="email" name="userEmail">
+                <label for="email">E-mail</label>
+                <input type="email" name="userEmail" id="email">
                 <br>
-                <label for="userPhoneNumber">Telefone</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD+ número sem espaço ou hífen">
+                <label for="phoneNumber">Telefone</label>
+                <input type="tel" name="userPhoneNumber" id="phoneNumber" pattern="[0-9]{11}" placeholder="DDD+ número sem espaço ou hífen">
                 <br>
-                <label for="userImage">Upload de foto</label>
-                <input type="file" accept="image/*" name="userImage">
+                <label for="image">Upload de foto</label>
+                <input type="file" accept="image/*" name="userImage" id="image">
                 <br>
             </fieldset>
             <!-- Dados do perfil do usuario -->
@@ -97,7 +97,21 @@
                 <label for="userCity">Cidades:</label>
                 <input type="text" name="userCity">
             </fieldset>
-            
+
+            <fieldset>
+                <legend>Hábitos</legend>
+                <p>Reces Sociais:</p>
+
+                <input type="checkbox" name="social" value="Instagram" id="">
+                <label for="social">Instagram</label>
+                <input type="checkbox" name="social" value="facebook" id="">
+                <label for="social">Facebook</label>
+                <input type="checkbox" name="social" value="linkedin" id="">
+                <label for="social">Linkedin</label>
+                <input type="checkbox" name="social" value="x" id="">
+                <label for="social">X</label>
+            </fieldset>
+
             <button type="submit">Enviar</button>
         </form>
     </section>
