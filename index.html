@@ -97,7 +97,7 @@
                 <label for="city">Cidades:</label>
                 <input id="city" type="text" name="userCity">
             </fieldset>
-
+            <!-- Hábitos -->
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Reces Sociais:</p>
@@ -133,7 +133,7 @@
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
-
+            <!-- Pesquisa de satisfação -->
             <fieldset>
                 <legend>Pesquisa de satisfação</legend>
                 <p>Dentre as opções, qual foi a sua experiencia com o Culturama?</p>
@@ -149,7 +149,17 @@
                 <label for="coment">Deixe seu comentario:</label>
                 <textarea name="userComent" id="coment" placeholder="Escreva seu comentario aqui..."></textarea>
             </fieldset>
+            <!-- Confirmações -->
+            <fieldset>
+                <legend>Confirmações</legend>
 
+                <input type="checkbox" name="userLgpd" id="userLgpdTerm" value="accepted" required>
+                <label for="userLgpdTerm">Eu aceito participar da pesquisa</label>
+                <br>
+                <input type="checkbox" name="userGetResult" id="getResult" value="accepted">
+                <label for="userLgpdTerm">Desejo receber o resultado por E-mail</label>
+                <br>
+            </fieldset>
             <button type="submit">Enviar</button>
         </form>
     </section>
