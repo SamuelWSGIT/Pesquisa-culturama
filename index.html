@@ -13,7 +13,7 @@
     </header>
     <section>
         <form action="" method="get">
-            <!-- Dados pessoais -->
+            <!-- Dados pessoais do usuario -->
             <fieldset>
                 <legend>Dados Pessoais</legend>
                 <label for="userName">Nome:</label>
@@ -35,10 +35,10 @@
                 <input type="file" accept="image/*" name="userImage">
                 <br>
             </fieldset>
-            <!-- Dados do perfil -->
-             <fieldset>
+            <!-- Dados do perfil do usuario -->
+            <fieldset>
                 <legend>Perfil</legend>
-                <!-- Sexualidade -->
+                <!-- Genero do usuario -->
                 <p>Gênero:</p>
                 <input type="radio" name="userGender"
                 value="Feminino">
@@ -52,7 +52,7 @@
                 value="notInformed">
                 <label for="userGender">Prefiro não informar</label>
                 <br>
-                <!-- Estado civil -->
+                <!-- Estado civil do usuario -->
                 <label for="userMarital">Estado civil:</label>
                 <select name="userMarital">
                     <option value="notInformed">Selecione...</option>
@@ -61,7 +61,7 @@
                     <option value="casado">União estável</option>
                 </select>
 
-                <!-- Estado onde mora -->
+                <!-- Estado do usuario -->
                 <label for="userState">Estado:</label>
                 <select name="userState" required>
                    <option value="acre">Acre</option>
@@ -93,10 +93,11 @@
                    <option value="tocantins">Tocantins</option>
                 </select>
                 
-                <!-- Cidade onde mora -->
+                <!-- Cidade do usuario -->
                 <label for="userCity">Cidades:</label>
                 <input type="text" name="userCity">
-             </fieldset>
+            </fieldset>
+            
             <button type="submit">Enviar</button>
         </form>
     </section>
