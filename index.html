@@ -16,16 +16,16 @@
             <!-- Dados pessoais do usuario -->
             <fieldset>
                 <legend>Dados Pessoais</legend>
-                <label for="name">Nome:</label>
+                <label for="name">Nome:*</label>
                 <input id="name" type="text" name="userName" required>
                 <br>
-                <label for="age">Idade</label>
+                <label for="age">Idade:*</label>
                 <input id="age" type="number" name="userAge" min="12" max="100" required>
                 <br>
                 <label for="birthDate">Data de nascimento</label>
                 <input id="birthDate" type="date" name="userBirthDate">
                 <br>
-                <label for="email">E-mail</label>
+                <label for="email">E-mail:*</label>
                 <input id="email" type="email" name="userEmail" >
                 <br>
                 <label for="phoneNumber">Telefone</label>
@@ -132,6 +132,21 @@
                 <br>
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
+            </fieldset>
+
+            <fieldset>
+                <legend>Pesquisa de satisfação</legend>
+                <p>Dentre as opções, qual foi a sua experiencia com o Culturama?</p>
+                <input id="otima" type="radio" name="userSatisfaction">
+                <label for="otima">Otima</label>
+                <input id="boa" type="radio" name="userSatisfaction">
+                <label for="boa">boa</label>
+                <input id="regular" type="radio" name="userSatisfaction">
+                <label for="regular">regular</label>
+                <input id="ruim" type="radio" name="userSatisfaction">
+                <label for="ruim">ruim</label>
+                <p>Deixe seu comentario abaixo:</p>
+                <textarea name="userComent" id="coment" placeholder="Escreva seu comentario aqui..."></textarea>
             </fieldset>
 
             <button type="submit">Enviar</button>
