@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
+    <!-- Titulos do site -->
     <title>Pesquisa Culturama</title>
     <!-- Estilo do css -->
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/culturama-favico.png" type="image/x-icon">
 </head>
 <body>
     <header>
+        <img src="img/logo-culturama.png" alt="logo culturama">
         <h1>Pesquisa Online</h1>
     </header>
     <section>
@@ -97,7 +104,7 @@
                 <label for="city">Cidades:</label>
                 <input id="city" type="text" name="userCity">
             </fieldset>
-            <!-- Hábitos -->
+            <!-- Dados dos Hábitos -->
             <fieldset>
                 <legend>Hábitos</legend>
                 <p>Reces Sociais:</p>
@@ -133,7 +140,7 @@
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
-            <!-- Pesquisa de satisfação -->
+            <!-- Dados da Pesquisa de satisfação -->
             <fieldset>
                 <legend>Pesquisa de satisfação</legend>
                 <p>Dentre as opções, qual foi a sua experiencia com o Culturama?</p>
@@ -149,7 +156,7 @@
                 <label for="coment">Deixe seu comentario:</label>
                 <textarea name="userComent" id="coment" placeholder="Escreva seu comentario aqui..."></textarea>
             </fieldset>
-            <!-- Confirmações -->
+            <!-- Dados de Confirmações -->
             <fieldset>
                 <legend>Confirmações</legend>
 
@@ -160,7 +167,9 @@
                 <label for="userLgpdTerm">Desejo receber o resultado por E-mail</label>
                 <br>
             </fieldset>
+            <!-- Enviar formulario -->
             <button type="submit">Enviar</button>
+            <!-- Limpar formulario -->
             <button type="reset">Limpar</button>
         </form>
     </section>
