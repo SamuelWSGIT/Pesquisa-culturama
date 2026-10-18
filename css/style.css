@@ -60,6 +60,14 @@ label{
     margin-bottom: 5px;
 }
 
+small{
+    display: inline-block;
+}
+
+input[type="tel"]{
+    margin-bottom: 0;
+}
+
 p{
     margin-bottom: 15px;
     font-weight: bold;
