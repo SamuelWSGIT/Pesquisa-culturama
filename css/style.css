@@ -62,9 +62,12 @@ label{
 
 small{
     display: inline-block;
+    margin-bottom: 5px;
+    text-decoration: underline;
 }
 
-input[type="tel"]{
+input[type="tel"],
+input[type="file"]{
     margin-bottom: 0;
 }
 
